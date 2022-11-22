@@ -3,7 +3,7 @@ module "s3-bucket" {
   version = "2.8.0"
 
   bucket_prefix  = "${var.prefix}"
-  acl    = "public"
+  acl    = "public-read"
 
   versioning = {
     enabled = true
